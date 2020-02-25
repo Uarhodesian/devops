@@ -1,3 +1,11 @@
-FROM ubuntu
-WORKDIR ./repository/monitoring
-COPY ./metrics.py /repository/monitoring
+FROM python:3
+
+WORKDIR /usr/src/app
+
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD [ "python", "./metrics.py" ]
+
