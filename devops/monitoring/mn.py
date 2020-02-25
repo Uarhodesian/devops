@@ -12,5 +12,12 @@ boot = p.boot_time()
 x = dt.datetime.fromtimestamp(boot).strftime("%Y-%m-%d %H:%M:%S")
 print(x)
 """os"""
-platform.system()
-platform.release()
+print(platform.system())
+print(platform.release())
+#print("use arguments '"'mem'"' or '"'cpu'"' to to specify which metrics you want to print")
+if argumentList[1] == "mem":
+    print("mem rules")
+elif argumentList[1] == "cpu":
+    print("cpu rules")
+else:
+    print("Wrong arguments! Use arguments '"'mem'"' or '"'cpu'"' to to specify which metrics you want to print")
