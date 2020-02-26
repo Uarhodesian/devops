@@ -7,6 +7,6 @@
 ***
 ### QUICK START
 #### to specify metrics we should edit the last string Dockerfile
-#### if we want to see cpu CMD [ "python", "./metrics.py", "cpu" ]
-#### for memory CMD [ "python", "./metrics.py", "mem" ]
+#### if we want to see cpu: CMD [ "python", "./metrics.py", "cpu" ]
+#### for memory: CMD [ "python", "./metrics.py", "mem" ]
 #### Cheers!
